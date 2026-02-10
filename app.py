@@ -14,7 +14,7 @@ app = Flask(__name__)
 def load_tokens():
     try:
         # Owner: @AGAJAYOFFICIAL
-        with open("spam_ind.json", "r") as file:
+        with open("jwt_token.json", "r") as file:
             data = json.load(file)
         tokens = [item["token"] for item in data]  
         return tokens
